@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-
+    background: #0192BE;
 }
 
 .social_list li {
@@ -17,4 +17,19 @@
     font-size:  2em;
     cursor: pointer;
     color: blue;
+}
+
+.footer_d {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: #00789c;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_img {
+    width: 100px;
 }

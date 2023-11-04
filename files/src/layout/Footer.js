@@ -1,16 +1,13 @@
 import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import styles from './Footer.module.css'
+import logo from './images/Logo BALV.png'
 
 function Footer() {
 
 return (
-    <footer>
-        <ul className={styles.social_list}>
-            <li><FaFacebook/>Facebook</li>
-            <li><FaInstagram/>Instagram</li>
-            <li><FaLinkedin/>Linkedin</li>
-        </ul>
-        <p>Nosso rodapé</p>
+    <footer className={styles.footer_d}>
+        <img src={logo} alt="Logo BALV!" className={styles.footer_img}/>
+        BALV Soluções de Software © • 2023
     </footer>
 )
 }

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap');
+
+.main_home {
+   display: flex;
+   height: calc(100vh - 26.2vh);
+}
+
+.background_image {
+    background-image: url('./components_images/img_fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    flex-basis: 40%;
+}
+
+.description {
+    font-size: clamp(20px, 4vw, 70px);
+    height: 525px;
+    font-family: 'Poppins', sans-serif;
+    padding: 48px 41px 0px 41px;
+    flex-basis: 60%;
+}
