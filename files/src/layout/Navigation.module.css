@@ -1,0 +1,14 @@
+.list {
+    display: flex;
+    list-style: none;
+    background: green;
+}
+
+.item {
+    margin-right: 1em;
+}
+
+.link_custom {
+    color: white;
+    text-decoration: none;
+}
