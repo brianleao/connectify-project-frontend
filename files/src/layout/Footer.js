@@ -1,4 +1,3 @@
-import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import styles from './Footer.module.css'
 import logo from './images/Logo BALV.png'
 

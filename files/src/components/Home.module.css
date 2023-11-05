@@ -2,7 +2,7 @@
 
 .main_home {
    display: flex;
-   height: calc(100vh - 26.2vh);
+   height: calc(100vh - 0vh);
 }
 
 .background_image {

@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 import styles from './Navigation.module.css'
-import logo from './images/logo_connectify.png'
+import Logo from './images/logo_connectify.png'
 
 function Navigation() {
     return (
@@ -8,11 +8,11 @@ function Navigation() {
         <div>
             <ul className={styles.list}>
                 <li>
-                    <img src={logo}/>
+                    <img src={Logo}/>
                 </li>
                 <li className={styles.buttons}>
-                    <p className={styles.cadastrar_button}>Cadastrar-se</p>
-                    <button className={styles.login_button}>Entrar</button>
+                    <Link to="/cadastrar" className={styles.cadastrar_button}>Cadastrar-se</Link>
+                    <Link to="/login" className={styles.login_button}>Entrar</Link>
                 </li>
             </ul>
         </div>

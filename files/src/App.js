@@ -1,23 +1,18 @@
 // import logo from'./logo.svg';
-//apenas um teste
 import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './components/Home';
-import Contato from './components/Contato';
-import Empresa from './components/Empresa';
-import Navigation from './layout/Navigation';
-import Footer from './layout/Footer';
+import Login from './components/Login';
+import Cadastrar from './components/Cadastrar';
 
 function App() {
   return (
     <Router>
-      <Navigation/>
             <Routes>
                 <Route exact path="/" element={<Home />} />
-                <Route path="/contato" element={<Contato />} />
-                <Route path="/empresa" element={<Empresa />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/cadastrar" element={<Cadastrar/>} />
             </Routes>
-      <Footer/>
     </Router>
     
   );
