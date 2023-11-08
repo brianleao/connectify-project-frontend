@@ -11,11 +11,12 @@ function Login() {
         <div className={styles.div_main}>
             
             <div className={styles.div_aside}>
-                <img src={Logo}/>
+                <img src={Logo} className={styles.logo_c}/>
                 <span className={styles.div_aside_span}>Suas músicas, seus artistas, suas playlists e suas avaliações tudo em um só lugar!</span>
             </div>
 
             <form className={styles.container_main}>
+                <h1>Entrar</h1>
 
                 <label>E-mail ou usuário</label>
                 <div className={styles.mail}>
