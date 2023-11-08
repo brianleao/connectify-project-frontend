@@ -32,10 +32,7 @@
     margin: 91px auto;
     padding: 58px 56px 30px 52px;
     gap: 16px;
-}
-
-.container_main h2 {
-    font-size: clamp(20px,2vw, 70px);
+    font-size: clamp(20px,1.5vw, 70px);
 }
 
 .mail {

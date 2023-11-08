@@ -15,15 +15,15 @@ function Login() {
                 <span className={styles.div_aside_span}>Suas músicas, seus artistas, suas playlists e suas avaliações tudo em um só lugar!</span>
             </div>
 
-            <div className={styles.container_main}>
+            <form className={styles.container_main}>
 
-                <h2>E-mail ou usuário</h2>
+                <label>E-mail ou usuário</label>
                 <div className={styles.mail}>
                     <IoMailOutline className={styles.icons_form}/>
                     <input type="email" className={styles.email} placeholder="Digite seu e-mail ou usuário"/>
                 </div>
 
-                <h2>Senha</h2>
+                <label>Senha</label>
                 <div className={styles.password}>
                         <IoLockClosedOutline className={styles.icons_form}/>
                         <input type="password" placeholder="Digite sua senha" className={styles.passwd}/>
@@ -31,9 +31,9 @@ function Login() {
                 </div>
 
                 <a href="#" className={styles.esqsen}>Esqueceu a senha?</a>
-                <input type="button" className={styles.botao} value="Entrar"/>
+                <input type="submit" className={styles.botao} value="Entrar"/>
                 <span className={styles.not_sign}>Não possui conta? <br/> <a href="#">Clique aqui</a> e cadastre-se agora mesmo!</span>
-            </div>
+            </form>
 
         </div>
     )
