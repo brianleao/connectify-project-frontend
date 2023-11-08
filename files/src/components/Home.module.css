@@ -48,7 +48,7 @@
 
 .main_home {
    display: flex;
-   height: calc(100vh - 0vh);
+   height: 100vh;
 }
 
 .background_image {
@@ -86,6 +86,10 @@
 
 @media (max-width: 767px) {
 
+    .cont_main {
+        height: auto;
+    }
+
     .list {
         background: white;
         display: flex;
@@ -97,6 +101,11 @@
         width: 90%;
         margin: 30px auto;
     }
+
+    .main_home {
+        display: flex;
+        height: auto;
+     }
 
     .buttons {
         width: 100vw;
@@ -130,6 +139,7 @@
         flex-basis: 100%;
         font-size: clamp(25px, 5vw, 70px);
         text-align: left;
+        height: auto;
     }
 
     .footer_d{display: none;}
