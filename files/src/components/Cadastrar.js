@@ -1,10 +1,11 @@
 import React from "react"
+import styles from './Cadastrar.module.css'
 
 function Cadastrar() {
     return (
         <div>
-            <h1>Cadastrar</h1>
-            <p>Conteúdo da página da página de cadastro</p>
+            <h1 className={styles.h1}>EU TE AMO</h1>
+            <p>Giovanna é a menina mais linda do mundo!</p>
         </div>
     )
 }
