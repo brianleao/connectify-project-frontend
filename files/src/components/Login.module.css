@@ -59,6 +59,7 @@ h1 {
 .icons_form {
     margin: 0 15px;
     font-size: 2em;
+    cursor: pointer;
 }
 
 .password {

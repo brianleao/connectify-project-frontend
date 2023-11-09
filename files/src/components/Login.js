@@ -3,9 +3,25 @@ import Logo from '../layout/images/logo_connectify.png'
 import {IoMailOutline} from "react-icons/io5";
 import {IoLockClosedOutline} from 'react-icons/io5'
 import {IoEyeOffOutline} from 'react-icons/io5'
+import {IoEyeOutline} from 'react-icons/io5'
 import styles from './Login.module.css'
 
 function Login() {
+
+    function alterar() {
+        let tipo = document.getElementById("botao_senha");
+        
+        // alert(`Fora do if ele está como ${tipo.type}`)
+        
+        if (tipo.type == "password") {
+        tipo.type = "text"
+        }
+
+        else {
+            tipo.type = "password"
+        }
+    }
+
     return (
         
         <div className={styles.div_main}>
@@ -27,8 +43,8 @@ function Login() {
                 <label>Senha</label>
                 <div className={styles.password}>
                         <IoLockClosedOutline className={styles.icons_form}/>
-                        <input type="password" placeholder="Digite sua senha" className={styles.passwd}/>
-                        <IoEyeOffOutline className={styles.icons_form}/>
+                        <input type="password" placeholder="Digite sua senha" id="botao_senha" className={styles.passwd}/>
+                        <IoEyeOffOutline className={styles.icons_form} onClick={alterar}/>
                 </div>
 
                 <a href="#" className={styles.esqsen}>Esqueceu a senha?</a>
