@@ -39,7 +39,7 @@ label {
     min-width: 414px;
     border: none;
     outline-color: #0192BE;
-    padding: 10px;
+    padding: 10px 10px 10px 44px;
     font-size: 15px;
     border-radius: 10px;
 }
@@ -51,11 +51,11 @@ label {
     font-size: 30px;
     margin-bottom: 9px;
     border-radius: 10px;
-    padding-left: 10px;
 }
 
 .icons {
-    margin-right: 10px;
+    margin-left: 10px;
+    position: absolute;
 }
 
 .button_cadastrar {
@@ -68,4 +68,14 @@ label {
     color: white;
     padding: 10px 30px;
     border-radius: 30px;
+    cursor: pointer;
+    outline-color: white;
+}
+
+.button_cadastrar:hover {
+    background: #0192be8a;
+}
+
+@media( max-width: 767px) {
+    
 }

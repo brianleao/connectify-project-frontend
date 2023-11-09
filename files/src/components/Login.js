@@ -1,24 +1,19 @@
-import React from "react"
-import Logo from '../layout/images/logo_connectify.png'
+import React, { useState } from "react"
 import {IoMailOutline} from "react-icons/io5";
 import {IoLockClosedOutline} from 'react-icons/io5'
 import {IoEyeOffOutline} from 'react-icons/io5'
 import {IoEyeOutline} from 'react-icons/io5'
 import styles from './Login.module.css'
+import Logo from './Logo'
 
 function Login() {
+    const [inputType, setInputType] = useState('password')
 
     function alterar() {
-        let tipo = document.getElementById("botao_senha");
-        
-        // alert(`Fora do if ele está como ${tipo.type}`)
-        
-        if (tipo.type == "password") {
-        tipo.type = "text"
-        }
-
-        else {
-            tipo.type = "password"
+        if (inputType === 'password') {
+            setInputType('text')
+        } else {
+            setInputType('password')
         }
     }
 
@@ -27,7 +22,7 @@ function Login() {
         <div className={styles.div_main}>
             
             <div className={styles.div_aside}>
-                <img src={Logo} className={styles.logo_c}/>
+                <Logo/>
                 <span className={styles.div_aside_span}>Suas músicas, seus artistas, suas playlists e suas avaliações tudo em um só lugar!</span>
             </div>
 
@@ -43,9 +38,13 @@ function Login() {
                 <label>Senha</label>
                 <div className={styles.password}>
                         <IoLockClosedOutline className={styles.icons_form}/>
-                        <input type="password" placeholder="Digite sua senha" id="botao_senha" className={styles.passwd}/>
-                        <IoEyeOffOutline className={styles.icons_form} onClick={alterar}/>
-                </div>
+                        <input type={inputType} placeholder="Digite sua senha" id="botao_senha" className={styles.passwd}/>
+                        {inputType === 'password' ? (
+                            <IoEyeOffOutline onClick={alterar} className={styles.icons_form}/>
+                        ) : (
+                            <IoEyeOutline onClick={alterar} className={styles.icons_form} />
+                        )}
+                 </div>
 
                 <a href="#" className={styles.esqsen}>Esqueceu a senha?</a>
                 <input type="submit" className={styles.botao} value="Entrar"/>
