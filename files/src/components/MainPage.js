@@ -10,7 +10,7 @@ function MainPage() {
         <div>
             <NavBar/>
             
-            <div className={styles.container_main}>
+            <div className={styles }>
                 <h1>Seu Ranking</h1>
                 <img src={imgRanking} className={styles.img_custom}/>
             

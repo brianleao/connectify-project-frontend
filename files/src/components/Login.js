@@ -9,6 +9,8 @@ import {Link} from 'react-router-dom'
 
 function Login() {
     const [inputType, setInputType] = useState('password')
+    const [userEMail, setEmail] = useState()
+    const [passwordUser, setPasswordUser] = useState()
 
     function alterar() {
         if (inputType === 'password') {
@@ -16,6 +18,10 @@ function Login() {
         } else {
             setInputType('password')
         }
+    }
+
+    function enterApp(e) {
+        alert(`O e-mail ou usuário é ${userEMail} e a senha é ${passwordUser}`) 
     }
 
     return (
@@ -27,19 +33,19 @@ function Login() {
                 <span className={styles.div_aside_span}>Suas músicas, seus artistas, suas playlists e suas avaliações tudo em um só lugar!</span>
             </div>
 
-            <form className={styles.container_main}>
+            <form onSubmit={enterApp} className={styles.container_main}>
                 <h1>Entrar</h1>
 
-                <label>E-mail ou usuário</label>
+                <label>E-mail</label>
                 <div className={styles.mail}>
                     <IoMailOutline className={styles.icons_form}/>
-                    <input type="email" className={styles.email} placeholder="Digite seu e-mail ou usuário"/>
+                    <input type="email" className={styles.email} onChange={(e) => setEmail(e.target.value)} placeholder="Digite seu e-mail"/>
                 </div>
 
                 <label>Senha</label>
                 <div className={styles.password}>
                         <IoLockClosedOutline className={styles.icons_form}/>
-                        <input type={inputType} placeholder="Digite sua senha" id="botao_senha" className={styles.passwd}/>
+                        <input type={inputType} placeholder="Digite sua senha" id="botao_senha" onChange={(e) => setPasswordUser(e.target.value)} className={styles.passwd}/>
                         {inputType === 'password' ? (
                             <IoEyeOffOutline onClick={alterar} className={styles.icons_form}/>
                         ) : (
