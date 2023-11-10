@@ -1,16 +1,15 @@
 import React from "react"
 import styles from './Home.module.css'
 import {Link} from 'react-router-dom'
-// import styles from './Navigation.module.css'
-import Logo from '../layout/images/logo_connectify.png'
 import LogoBalv from '../layout/images/Logo BALV.png'
+import LogoConnectify from '../components/Logo'
 
 function Home() {
     return (
         <div className={styles.cont_main}>
             <ul className={styles.list}>
                 <li>
-                    <img src={Logo} className={styles.logo_connectify}/>
+                    <LogoConnectify/>
                 </li>
                 <li className={styles.buttons}>
                     <Link to="/cadastrar" className={styles.custom_button}>Cadastrar-se</Link>
