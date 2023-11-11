@@ -4,10 +4,7 @@
 
 h1 {
     text-align: center;
-}
-
-h2 {
-
+    font-size: 30px;
 }
 
 span {
@@ -17,6 +14,7 @@ span {
 .infos {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .container_main {
