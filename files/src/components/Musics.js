@@ -3,7 +3,8 @@ import NavBar from './NavBar'
 import MusicMain from './music_images/image_main.png'
 import {IoStarHalf} from "react-icons/io5"
 import AudioPlayer from 'react-h5-audio-player'
-import 'react-h5-audio-player/lib/styles.css'        
+import 'react-h5-audio-player/lib/styles.css'
+import Player from './Player'
 
 function Musics() {
 
@@ -30,8 +31,9 @@ function Musics() {
                     <p className={styles.singer_name}>Red Hot Chili Peppers</p>
                 </div>
 
-            </div>
+                <Player/>
 
+            </div>
         </div>
     )
 }
