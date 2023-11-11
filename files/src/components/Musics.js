@@ -2,8 +2,6 @@ import styles from './Musics.module.css'
 import NavBar from './NavBar'
 import MusicMain from './music_images/image_main.png'
 import {IoStarHalf} from "react-icons/io5"
-import AudioPlayer from 'react-h5-audio-player'
-import 'react-h5-audio-player/lib/styles.css'
 import Player from './Player'
 
 function Musics() {
@@ -32,7 +30,7 @@ function Musics() {
                 </div>
 
                 <Player/>
-
+                
             </div>
         </div>
     )
