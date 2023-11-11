@@ -5,8 +5,10 @@ import {IoSearchOutline} from 'react-icons/io5'
 import {IoSettingsOutline} from 'react-icons/io5'
 import {IoLogOutOutline} from 'react-icons/io5'
 import {Link} from 'react-router-dom'
+import React, { useState } from "react"
 
 function NavBar() {
+
     return (
         <nav className={styles.nav_container}>
              
@@ -21,12 +23,14 @@ function NavBar() {
                 <Link to="/mainpage">
                     <IoHomeOutline className={styles.icons}/>
                 </Link>
-
+                
                 <IoSearchOutline className={styles.icons}/>
+                
                 <IoSettingsOutline className={styles.icons}/>
                 <Link to="/login">
                     <IoLogOutOutline className={styles.icons}/>
                 </Link>
+            
             </div>
             
         </nav>
