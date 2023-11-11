@@ -5,6 +5,7 @@ import {IoMailOutline} from "react-icons/io5"
 import {IoLockClosedOutline} from "react-icons/io5"
 import { useState } from "react"
 import Logo from './Logo'
+import {Link} from 'react-router-dom'
 
 function Cadastrar(props) {
     function cadastrarUsuario(e) {
@@ -40,7 +41,10 @@ function Cadastrar(props) {
 
             <nav className={styles.nav_bar}>
                 <Logo/>
-                <input type="button" value="Entrar" className={styles.button_enter}/>
+                <Link to="/login">
+                    <input type="button" value="Entrar" className={styles.button_enter}/>
+                </Link>
+
             </nav>
 
             <form onSubmit={cadastrarUsuario} className={styles.container_cadastrar}>

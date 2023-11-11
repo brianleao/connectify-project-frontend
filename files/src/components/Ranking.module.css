@@ -1,0 +1,11 @@
+.container_main {
+    display: flex;
+}
+
+.tittle_main {
+    font-size: 50px;
+}
+
+.musics {
+    margin-left: 30px;
+}

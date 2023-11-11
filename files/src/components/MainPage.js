@@ -3,6 +3,8 @@ import NavBar from './NavBar'
 import imgRanking from './components_images/ImagemSeuRanking.png'
 import imgPlaylists from './components_images/ImagemPlaylists.png'
 import imgArtists from './components_images/ImagemArtistas.png'
+import { Link } from 'react-router-dom'
+import SPA_Options from './SPA_Options'
 
 function MainPage() {
 
@@ -10,16 +12,8 @@ function MainPage() {
         <div>
             <NavBar/>
             
-            <div className={styles }>
-                <h1>Seu Ranking</h1>
-                <img src={imgRanking} className={styles.img_custom}/>
-            
-
-            <h1>Playlists</h1>
-            <img src={imgPlaylists} className={styles.img_custom} />
-
-            <h1>Artistas Favoritos</h1>
-            <img src={imgArtists} className={styles.img_custom}/>
+            <div className={styles.container_main}>
+            <SPA_Options/>    
             </div>
 
         </div>

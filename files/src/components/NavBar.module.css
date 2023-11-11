@@ -18,6 +18,7 @@
 .icons { 
     font-size: 40px;
     cursor: pointer;
+    color: black;
 }
 
 .icons:hover {

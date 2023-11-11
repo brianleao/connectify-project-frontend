@@ -34,7 +34,7 @@ function Login() {
             </div>
 
             <form onSubmit={enterApp} className={styles.container_main}>
-                <h1>Entrar</h1>
+                <h1 className={styles.tittle}>Entrar no Connectify</h1>
 
                 <label>E-mail</label>
                 <div className={styles.mail}>
@@ -57,7 +57,7 @@ function Login() {
                 {/* <input type="submit" className={styles.botao} value="Entrar"/> */}
                 <Link to="/mainpage" className={styles.botao}>Entrar</Link>
 
-                <span className={styles.not_sign}>Não possui conta? <br/> <a href="#">Clique aqui</a> e cadastre-se agora mesmo!</span>
+                <span className={styles.not_sign}>Não possui conta? <br/> <a href="./cadastrar">Clique aqui</a> e cadastre-se agora mesmo!</span>
             </form>
 
         </div>
