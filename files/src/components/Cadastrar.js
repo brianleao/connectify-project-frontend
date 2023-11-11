@@ -6,6 +6,9 @@ import {IoLockClosedOutline} from "react-icons/io5"
 import { useState } from "react"
 import Logo from './Logo'
 import {Link} from 'react-router-dom'
+import {IoPersonOutline} from "react-icons/io5"
+import {IoPencilOutline} from "react-icons/io5"
+
 
 function Cadastrar(props) {
     function cadastrarUsuario(e) {
@@ -49,10 +52,17 @@ function Cadastrar(props) {
 
             <form onSubmit={cadastrarUsuario} className={styles.container_cadastrar}>
                 <label htmlFor="name">Nome</label>
-                <input type="text" id="nome" onChange={(e) => setName(e.target.value)} className={styles.input_custom}/>
+
+                <div className={styles.container_icon}>
+                    <IoPencilOutline className={styles.icons}/>
+                    <input type="text" id="nome" onChange={(e) => setName(e.target.value)} className={styles.input_custom}/>
+                </div>
 
                 <label>Usuário</label>
+                <div className={styles.container_icon}>
+                    <IoPersonOutline className={styles.icons}/>
                 <input type="text" id="user" onChange={(e) => setUser(e.target.value)} className={styles.input_custom}/>
+                </div>
                 
                 <label htmlFor="email">E-mail</label>
                 <div className={styles.container_icon}>

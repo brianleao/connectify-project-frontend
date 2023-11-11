@@ -1,20 +1,36 @@
 import styles from './Musics.module.css'
 import NavBar from './NavBar'
 import MusicMain from './music_images/image_main.png'
+import {IoStarHalf} from "react-icons/io5"
+import AudioPlayer from 'react-h5-audio-player'
+import 'react-h5-audio-player/lib/styles.css'        
 
 function Musics() {
+
     return (
-        <div>
+        <div className={styles.bodyPageMusic}>
             <NavBar/>
-            <h1>Música</h1>
-            <p>Playlist Best of Rock - 2000</p>
+
+            <div className={styles.infos}>
+                <h1>Música</h1>
+                <span>Playlist Best of Rock - 2000</span>
+            </div>
             
             <div className={styles.container_main}>
-                <input type='button' value="Avalie esta música!"></input>
-                <img src={MusicMain}/>
-                <p>OtherSide</p>
-            </div>
+                
+                <div className={styles.avaliable}>
+                    <IoStarHalf className={styles.icon_star}/>
+                    <input type='button' value="Avalie esta música!" className={styles.button_avaliable}></input>
+                </div>
+                
+                    <img src={MusicMain}/>
+                
+                <div className={styles.music_infos}>
+                    <h2 className={styles.music_name}>Otherside</h2>
+                    <p className={styles.singer_name}>Red Hot Chili Peppers</p>
+                </div>
 
+            </div>
 
         </div>
     )
