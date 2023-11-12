@@ -22,6 +22,8 @@
 
 .icons:hover {
     color: #0192BE;
+    font-size: 50px;
+    transition: 0.3s;
 }
 
 .div_icons {
