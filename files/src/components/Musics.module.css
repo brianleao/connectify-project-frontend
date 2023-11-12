@@ -41,7 +41,7 @@ span {
 }
 
 .button_avaliable {
-    width: max-content;
+    width: auto;
     border: none;
     padding: 10px;
     background: none;

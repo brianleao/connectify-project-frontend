@@ -30,7 +30,7 @@ function NavBar() {
                 
                 {/* <IoSearchOutline className={styles.icons}/> */}
                 <div className={styles.searchBar}>
-                    <input type='text'/>
+                    <input type='text' className={styles.inputSearch}/>
                     <IoSearchOutline className={styles.iconSearch} onClick={clicou}/>
                 </div>
                 

@@ -21,6 +21,7 @@ function Musics() {
             
             <div className={styles.containerPrimary}>
                 <div className={styles.container_main}>
+                    
                     <div className={styles.avaliable}>
                         <IoStarHalf className={styles.icon_star}/>
                         <input type='button' value="Avalie esta música!" className={styles.button_avaliable}></input>
