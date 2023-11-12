@@ -9,6 +9,10 @@ import React, { useState } from "react"
 
 function NavBar() {
 
+    function clicou() {
+        alert('Clicou')
+    }
+
     return (
         <nav className={styles.nav_container}>
              
@@ -24,7 +28,11 @@ function NavBar() {
                     <IoHomeOutline className={styles.icons}/>
                 </Link>
                 
-                <IoSearchOutline className={styles.icons}/>
+                {/* <IoSearchOutline className={styles.icons}/> */}
+                <div className={styles.searchBar}>
+                    <input type='text'/>
+                    <IoSearchOutline className={styles.iconSearch} onClick={clicou}/>
+                </div>
                 
                 <IoSettingsOutline className={styles.icons}/>
                 <Link to="/login">
