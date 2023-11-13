@@ -13,7 +13,6 @@ function Musics() {
     return (
         <div className={styles.bodyPageMusic}>
             <NavBar/>
-
             <div className={styles.infos}>
                 <h1>Música</h1>
                 <span>Playlist Best of Rock - 2000</span>
@@ -21,7 +20,6 @@ function Musics() {
             
             <div className={styles.containerPrimary}>
                 <div className={styles.container_main}>
-                    
                     <div className={styles.avaliable}>
                         <IoStarHalf className={styles.icon_star}/>
                         <input type='button' value="Avalie esta música!" className={styles.button_avaliable}></input>
