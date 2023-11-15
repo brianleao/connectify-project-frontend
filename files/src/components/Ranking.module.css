@@ -9,3 +9,24 @@
 .musics {
     margin-left: 30px;
 }
+
+.capa {
+    width: 825px;
+    height: 68px;
+    background-image: url(./music_images/capa_californication.png);
+    background-size: cover;
+    background-position-x: right;
+    border-radius: 18px;
+}
+
+.musicRanking {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconRemove {
+    cursor: pointer;
+    font-size: 40px;
+    color: red;
+}

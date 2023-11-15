@@ -5,13 +5,18 @@ import {IoSearchOutline} from 'react-icons/io5'
 import {IoSettingsOutline} from 'react-icons/io5'
 import {IoLogOutOutline} from 'react-icons/io5'
 import {Link} from 'react-router-dom'
-import React, { useState } from "react"
+import react from "react"
+import { useState } from "react"
 
 function NavBar() {
 
-    function clicou() {
-        alert('Clicou')
+    function clicou(e) {
+        e.preventDefault()
+        alert(`Você buscou por ${buscaUsuario}`)
+        
     }
+
+    const [buscaUsuario, setBuscaUsuario] = useState()
 
     return (
         <nav className={styles.nav_container}>
@@ -29,8 +34,8 @@ function NavBar() {
                 </Link>
                 
                 {/* <IoSearchOutline className={styles.icons}/> */}
-                <div className={styles.searchBar}>
-                    <input type='text' className={styles.inputSearch}/>
+                <div className={styles.searchBar} onSubmit={clicou}>
+                    <input type='text' className={styles.inputSearch} onChange={(e) => setBuscaUsuario(e.target.value)}/>
                     <IoSearchOutline className={styles.iconSearch} onClick={clicou}/>
                 </div>
                 

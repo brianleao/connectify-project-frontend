@@ -6,12 +6,12 @@ import Player from './Player'
 import {IoReorderThree} from 'react-icons/io5'
 function Musics() {
 
-    function clicou() {
-        alert('Clicou!')
+    function adicionarMusicaPlayList() {
+        alert('A música foi adicionada na playlist!')
     }
 
     return (
-        <div className={styles.bodyPageMusic}>
+        <div>
             <NavBar/>
             <div className={styles.infos}>
                 <h1>Música</h1>
@@ -20,10 +20,10 @@ function Musics() {
             
             <div className={styles.containerPrimary}>
                 <div className={styles.container_main}>
-                    <div className={styles.avaliable}>
+                    {/* <div className={styles.avaliable}>
                         <IoStarHalf className={styles.icon_star}/>
                         <input type='button' value="Avalie esta música!" className={styles.button_avaliable}></input>
-                    </div>
+                    </div> */}
                     
                         <img src={MusicMain}/>
                     
@@ -34,7 +34,7 @@ function Musics() {
                 </div>
                 <div className={styles.playerMusic}>
                     <Player/>
-                    <IoReorderThree className={styles.iconAddPlaylist} onClick={clicou}/>
+                    <IoReorderThree className={styles.iconAddPlaylist} onClick={adicionarMusicaPlayList}/>
                 </div>
             </div>
         </div>

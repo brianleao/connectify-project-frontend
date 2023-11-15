@@ -8,6 +8,7 @@ import Ranking from './components/Ranking'
 import Playlists from './components/Playlists'
 import FavoriteArtists from './components/FavoriteArtists'
 import Musics from './components/Musics';
+import Playlist from './components/Playlist'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/playlists" element={<Playlists/>}/>
                 <Route path="/favoriteartists" element={<FavoriteArtists/>}/>
                 <Route path="/musics" element={<Musics/>}/>
+                <Route path="/playlist" element={<Playlist/>}/>
             </Routes>
     </Router>
     
