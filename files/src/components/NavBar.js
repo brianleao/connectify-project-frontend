@@ -39,7 +39,10 @@ function NavBar() {
                     <IoSearchOutline className={styles.iconSearch} onClick={clicou}/>
                 </div>
                 
-                <IoSettingsOutline className={styles.icons}/>
+                <Link to="/settings">
+                    <IoSettingsOutline className={styles.icons}/>
+                </Link>
+
                 <Link to="/login">
                     <IoLogOutOutline className={styles.icons}/>
                 </Link>

@@ -1,0 +1,18 @@
+.container_main {
+    margin-left: 100px;
+}
+
+.tittleH1 {
+    margin-top: 60px;
+    font-size: 50px;
+}
+
+.styleLi{
+    font-size: 40px;
+    margin-left: 60px;
+}
+
+.styleLi:hover{
+    color: #0192BE;
+    cursor: pointer;
+}

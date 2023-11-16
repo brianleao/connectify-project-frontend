@@ -1,0 +1,25 @@
+.capa {
+    width: 825px;
+    height: 68px;
+    background-image: url(./music_images/redhot.png);
+    background-size: cover;
+    background-position-y: center;
+    border-radius: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    font-size: 2em; 
+    color: black;
+}
+
+.tittleH1 {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.container_main {
+    margin-left: 80px;
+}
