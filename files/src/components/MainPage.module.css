@@ -11,4 +11,10 @@
     .bottom_bar {
         display: block;
     }
+
+    .container_main {
+        margin: 0 auto;
+        width: max-content;
+        height: calc(100vh - 190px);
+    }    
 }
