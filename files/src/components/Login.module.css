@@ -153,12 +153,14 @@
     .mail {
         background: #D9D9D9;
         border-radius: 0px;
+        min-width: 0;
     }
 
     .email {
         background: #D9D9D9;
         width: 100%;
-        color: white;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
     }
 
     ::placeholder {
@@ -168,12 +170,14 @@
     .password {
         background: #D9D9D9;
         border-radius: 0px;
+        min-width: 0;
     }
 
     .passwd {
         background: #D9D9D9;
         width: 100%;
-        color: white;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
     }
 
     .esqsen {

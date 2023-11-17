@@ -23,18 +23,17 @@ function Cadastrar(props) {
             alert("Por favor, preencha o campo da senha")
         }
 
-        else if(!name || !user || !email || !password || !confirmPassword){
+        else if(!name || !email || !password || !confirmPassword){
             alert("ERRO: Faltam campos a serem preenchidos!")
         }
 
         else {
-            alert(`O nome completo é ${name}, o usuário é ${user} o email é ${email} a senha é ${password} e a confirmação da senha é ${confirmPassword}`)
+            alert(`O nome completo é ${name}, o email é ${email} a senha é ${password} e a confirmação da senha é ${confirmPassword}`)
         }
     }
     //name é o que eu vou ler e setName o que eu vou alterar no name
     //no método useState() eu posso setar um valor que se inicia quando o componente for inicializado
     const [name, setName] = useState()
-    const [user, setUser] = useState()
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
     const [confirmPassword, setConfirmPassword] = useState()
@@ -43,11 +42,16 @@ function Cadastrar(props) {
         <div className={styles.cadastrar_main}>
 
             <nav className={styles.nav_bar}>
-                <Logo/>
-                <Link to="/login">
-                    <input type="button" value="Entrar" className={styles.button_enter}/>
+                <div className={styles.cointainerSecond}>
+                    <Logo/>
+                    <Link to="/login">
+                        <input type="button" value="Entrar" className={styles.button_enter}/>
+                    </Link>
+                </div>
+                
+                <Link to="/" className={styles.cadastrarTittle}>
+                <h1>Cadastrar</h1>
                 </Link>
-
             </nav>
 
             <form onSubmit={cadastrarUsuario} className={styles.container_cadastrar}>
@@ -56,12 +60,6 @@ function Cadastrar(props) {
                 <div className={styles.container_icon}>
                     <IoPencilOutline className={styles.icons}/>
                     <input type="text" id="nome" onChange={(e) => setName(e.target.value)} className={styles.input_custom}/>
-                </div>
-
-                <label>Usuário</label>
-                <div className={styles.container_icon}>
-                    <IoPersonOutline className={styles.icons}/>
-                <input type="text" id="user" onChange={(e) => setUser(e.target.value)} className={styles.input_custom}/>
                 </div>
                 
                 <label htmlFor="email">E-mail</label>
