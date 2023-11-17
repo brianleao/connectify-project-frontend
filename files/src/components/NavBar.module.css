@@ -38,7 +38,7 @@
     border-radius: 20px;
     padding: 0 7px;
     width: 50px;
-    transition: width 0.5s ease-out 5s;
+    transition: width 0.5s ease-out 1s;
 }
 
 .searchBar:Hover{
@@ -67,4 +67,12 @@
 
 .iconSearch:hover {
     color: #0192BE; 
+}
+
+@media (max-width: 767px) {
+
+    .div_icons {
+        display: none;
+    }
+
 }

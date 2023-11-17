@@ -28,7 +28,6 @@ function NavBar() {
             
 
             <div className={styles.div_icons}>
-
                 <Link to="/mainpage">
                     <IoHomeOutline className={styles.icons}/>
                 </Link>
@@ -46,9 +45,7 @@ function NavBar() {
                 <Link to="/login">
                     <IoLogOutOutline className={styles.icons}/>
                 </Link>
-            
             </div>
-            
         </nav>
     )
 }

@@ -2,3 +2,13 @@
     margin: 0 auto;
     width: max-content;
 }
+
+.bottom_bar {
+    display: none;
+}
+
+@media( max-width: 767px) {
+    .bottom_bar {
+        display: block;
+    }
+}
