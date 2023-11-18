@@ -4,6 +4,9 @@ import MusicMain from './music_images/image_main.png'
 import {IoStarHalf} from "react-icons/io5"
 import Player from './Player'
 import {IoReorderThree} from 'react-icons/io5'
+import BottomBar from './BottomBar'
+
+
 function Musics() {
 
     function adicionarMusicaPlayList() {
@@ -25,7 +28,7 @@ function Musics() {
                         <input type='button' value="Avalie esta música!" className={styles.button_avaliable}></input>
                     </div> */}
                     
-                        <img src={MusicMain}/>
+                        <img src={MusicMain} className={styles.img_music}/>
                     
                     <div className={styles.music_infos}>
                         <h2 className={styles.music_name}>Otherside</h2>
@@ -37,6 +40,7 @@ function Musics() {
                     <IoReorderThree className={styles.iconAddPlaylist} onClick={adicionarMusicaPlayList}/>
                 </div>
             </div>
+            <BottomBar/>
         </div>
     )
 }

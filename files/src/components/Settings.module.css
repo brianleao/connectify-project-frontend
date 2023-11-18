@@ -1,15 +1,16 @@
 .container_main {
-    margin-left: 100px;
+    margin-left: 10%;
+    height: calc(100vh - 220px);
 }
 
 .tittleH1 {
-    margin-top: 60px;
-    font-size: 50px;
+    margin: 40px 0;
+    font-size: clamp(40px, 3vw ,80px);
 }
 
 .styleLi{
-    font-size: 40px;
-    margin-left: 60px;
+    font-size: clamp(30px, 2.5vw, 70px);
+    margin-left: 6%;
 }
 
 .styleLi:hover{

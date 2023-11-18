@@ -3,6 +3,7 @@ import SideBar from './SideBar'
 import NavBar from './NavBar'
 import {Link} from 'react-router-dom'
 import { IoRemoveCircleOutline } from "react-icons/io5";
+import BottomBar from './BottomBar'
 
 function Ranking() {
     return (
@@ -22,6 +23,11 @@ function Ranking() {
                 
                 </div>
             </div>
+
+            <div className={styles.bottom_bar}>
+                <BottomBar/>
+            </div>
+
         </div>
     )
 }

@@ -6,7 +6,7 @@ import styles from './SPA_Options.module.css'
 
 function SPA_Options() {
     return (
-        <div>
+        <div className={styles.container_main}>
             <h1>Seu Ranking</h1>
                 <Link to="/ranking">
                     <img src={imgRanking} className={styles.img_custom}/>

@@ -1,6 +1,6 @@
 .capa {
     width: 825px;
-    height: 68px;
+    padding: 20px;
     background-image: url(./music_images/redhot.png);
     background-size: cover;
     background-position-y: center;
@@ -17,9 +17,21 @@
 
 .tittleH1 {
     margin-top: 50px;
-    font-size: 40px;
+    font-size: clamp(35px, 2vh, 80px);
 }
 
 .container_main {
     margin-left: 80px;
+}
+
+@media (max-width: 767px) {
+    .capa {
+        width: 380px;
+        padding: 10px;
+    }
+
+    .container_main {
+        margin-left: 30px;
+        height: calc(100vh - 230px);
+    }
 }

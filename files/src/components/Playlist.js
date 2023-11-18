@@ -1,6 +1,7 @@
 import NavBar from './NavBar'
 import styles from './Playlist.module.css'
 import {Link} from 'react-router-dom'
+import BottomBar from './BottomBar'
 
 function Playlist() {
     return (
@@ -10,6 +11,7 @@ function Playlist() {
                 <h1 className={styles.tittlePlaylist}>Playlist 1</h1>
                 <Link to="/musics" className={styles.capa}>Otherside - Red Hot Chili Peppers</Link>
             </div>
+            <BottomBar/>
         </div>
     )
 }

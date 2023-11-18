@@ -1,4 +1,11 @@
 .div_aside {
+    display: block;
     width: max-content;
     padding: 11px;
+}
+
+@media(max-width: 767px) {
+    .div_aside{
+        display: none;
+    }
 }

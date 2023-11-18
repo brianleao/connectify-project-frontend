@@ -1,5 +1,6 @@
 import NavBar from "./NavBar"
 import styles from './Settings.module.css'
+import BottomBar from './BottomBar'
 
 function Settings() {
     return (
@@ -17,6 +18,7 @@ function Settings() {
                 </ul>
             </div>
             
+            <BottomBar/>
 
         </div>
     )

@@ -12,18 +12,12 @@ function MainPage() {
     return (
         <div>
             <NavBar/>
-            <div className={styles.container_main}>
-            <SPA_Options/>    
-            </div>
-
-            <div className={styles.bottom_bar}>
-                <BottomBar/>
-            </div>
-            
+                <div className={styles.container_main}>
+                    <SPA_Options/>    
+                </div>
+            <BottomBar/>
         </div>
     )
-
 }
-
 
 export default MainPage

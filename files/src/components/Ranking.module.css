@@ -1,9 +1,11 @@
 .container_main {
     display: flex;
+    height: calc(100vh - 180px);
 }
 
 .tittle_main {
-    font-size: 50px;
+    margin: 30px 0;
+    font-size: clamp(45px, 3vw, 80px);
 }
 
 .musics {
@@ -29,4 +31,14 @@
     cursor: pointer;
     font-size: 40px;
     color: red;
+}
+
+@media (max-width:767px) {
+    .capa {
+        width: 330px;
+        background-image: url(./music_images/capa_californication.png);
+        background-size: cover;
+        background-position-x: right;
+        border-radius: 18px;
+    }
 }

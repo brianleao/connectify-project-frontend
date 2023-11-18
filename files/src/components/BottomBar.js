@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom'
 function BottomBar() {
     return (
         <nav className={styles.bottom_bar}>
-            
             <Link to="/mainpage">
                 <IoHomeOutline className={styles.icons}/>
             </Link>
@@ -17,7 +16,6 @@ function BottomBar() {
             <Link to="/settings">
                 <IoSettingsOutline className={styles.icons}/>
             </Link>
-            
         </nav>
     )
 }
