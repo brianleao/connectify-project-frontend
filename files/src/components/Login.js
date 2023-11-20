@@ -59,7 +59,6 @@ function Login() {
 
                 <span className={styles.not_sign}>Não possui conta? <br/> <a href="./cadastrar">Clique aqui</a> e cadastre-se agora mesmo!</span>
             </form>
-
         </div>
     )
 }
