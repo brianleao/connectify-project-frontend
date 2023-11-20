@@ -1,6 +1,7 @@
 import NavBar from "./NavBar"
 import styles from './Settings.module.css'
 import BottomBar from './BottomBar'
+import {Link} from 'react-router-dom'
 
 function Settings() {
     return (
@@ -15,6 +16,10 @@ function Settings() {
                     <li className={styles.styleLi}>Importar Playlists</li>
                     <li className={styles.styleLi}>Importar Configurações</li>
                     <li className={styles.styleLi}>Plano VIP</li>
+                    <Link to='/' className={styles.button_logout}>
+                    <li className={styles.styleLi}>Sair do App</li>
+                    </Link>
+                    
                 </ul>
             </div>
             
