@@ -8,7 +8,7 @@
 
 :root {
     --primary-color: #0192BE;
-  }
+}
 
 .list {
     display: flex;
@@ -17,6 +17,10 @@
     list-style: none;
     background: var(--primary-color);
     padding: 1%;
+}
+
+.logo_connectify {
+    width: clamp(300px, 30vw, 500px);
 }
 
 .buttons {
@@ -60,11 +64,12 @@
 }
 
 .description {
-    font-size: clamp(20px, 4vw, 70px);
+    font-size: clamp(20px, 4.5vw, 70px);
     height: 525px;
     font-family: 'Poppins', sans-serif;
-    padding: 48px 41px 0px 41px;
+    padding: 48px 0 0 70px;
     flex-basis: 60%;
+    text-align: left;
 }
 
 /*FOOTER*/
