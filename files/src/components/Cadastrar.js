@@ -8,7 +8,7 @@ import Logo from './Logo'
 import {Link} from 'react-router-dom'
 import {IoPersonOutline} from "react-icons/io5"
 import {IoPencilOutline} from "react-icons/io5"
-
+import request from "../services/services";
 
 function Cadastrar(props) {
     function cadastrarUsuario(e) {
@@ -80,7 +80,16 @@ function Cadastrar(props) {
                     <input type="password" onChange={(e) => setConfirmPassword(e.target.value)} className={styles.input_custom}/>
                 </div>
 
-                <input type="submit" value="Cadastrar" className={styles.button_cadastrar} />
+                <input type="submit" value="Cadastrar" className={styles.button_cadastrar} onClick={() => {
+                    const json = {
+                        nome: name,
+                        email: email,
+                        senha: password
+                    };
+                    request.insertUsuario(json);
+
+
+                }} />
             </form>
         
         </div>

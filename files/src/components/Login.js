@@ -6,6 +6,7 @@ import {IoEyeOutline} from 'react-icons/io5'
 import styles from './Login.module.css'
 import Logo from './Logo'
 import {Link} from 'react-router-dom'
+import request from "../services/services";
 
 function Login() {
     const [inputType, setInputType] = useState('password')
@@ -54,8 +55,22 @@ function Login() {
                  </div>
 
                 <a href="#" className={styles.esqsen}>Esqueceu a senha?</a>
-                {/* <input type="submit" className={styles.botao} value="Entrar"/> */}
-                <Link to="/mainpage" className={styles.botao}>Entrar</Link>
+                {<input type="submit" className={styles.botao} value="Entrar" onClick={ async () => {
+                    const params = {
+                        email: userEMail,
+                        senha: passwordUser,
+                    };
+                    console.log(params);
+                    try {
+                        const response = await request.login(params);
+                        // COLOCAR VALIDACAO DE DADOS RETORNADOS
+                        console.log(response);
+                    } catch (error) {
+                        console.log(error);   
+                    }
+
+                }}/>}
+                
 
                 <span className={styles.not_sign}>Não possui conta? <br/> <a href="./cadastrar">Clique aqui</a> e cadastre-se agora mesmo!</span>
             </form>
