@@ -1,4 +1,5 @@
-const axios = require('axios');
+// const axios = require('axios');
+import axios from 'axios';
 const instance = axios.create({
     baseURL: 'http://localhost:3001',
     timeout: 1000,
@@ -146,7 +147,18 @@ const request =   {
             instance.put('/api/delete/playlist/musica',params);
 
         }
+    },
+     /**
+      * 
+      * @param {JSON} params 
+      * {email: string, senha: string}
+      */
+    login: function(params) {
+        if(params) {
+            return instance.post('/api/login', params);
+        }
     }
+
 
 
 
