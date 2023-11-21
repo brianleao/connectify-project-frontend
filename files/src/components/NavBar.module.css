@@ -32,43 +32,6 @@
     margin-right: 30px;
 }
 
-.searchBar {
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    padding: 0 7px;
-    width: 50px;
-    transition: width 0.5s ease-out 1s;
-}
-
-.searchBar:Hover{
-    width: 300px;
-    border: 2px solid black;
-    transition: width 0.5s ease-out 0s;
-}
-
-
-.inputSearch {
-    border: none;
-    padding: 8px;
-    margin: 0 10px;
-    outline: none;
-    font-size: 15px;
-    width: 100%;
-    margin-left: 35px;
-}
-
-.iconSearch { 
-    font-size: 40px;
-    cursor: pointer;
-    color: black;
-    position: fixed;
-}
-
-.iconSearch:hover {
-    color: #0192BE; 
-}
-
 @media (max-width: 767px) {
 
     .div_icons {

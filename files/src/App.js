@@ -10,6 +10,7 @@ import FavoriteArtists from './components/FavoriteArtists'
 import Musics from './components/Musics';
 import Playlist from './components/Playlist'
 import Settings from './components/Settings';
+import Search from './components/Search';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/musics" element={<Musics/>}/>
                 <Route path="/playlist" element={<Playlist/>}/>
                 <Route path="/settings" element={<Settings/>}/>
+                <Route path="/search" element={<Search/>}/>
             </Routes>
     </Router>
     

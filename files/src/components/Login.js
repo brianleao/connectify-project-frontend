@@ -7,6 +7,7 @@ import styles from './Login.module.css'
 import Logo from './Logo'
 import {Link} from 'react-router-dom'
 import request from "../services/services";
+import axios from "axios";
 
 function Login() {
     const [inputType, setInputType] = useState('password')
@@ -22,8 +23,9 @@ function Login() {
     }
 
     function enterApp(e) {
-        alert(`O e-mail ou usuário é ${userEMail} e a senha é ${passwordUser}`) 
+        // alert(`O e-mail ou usuário é ${userEMail} e a senha é ${passwordUser}`) 
     }
+
 
     return (
         
@@ -65,6 +67,7 @@ function Login() {
                         const response = await request.login(params);
                         // COLOCAR VALIDACAO DE DADOS RETORNADOS
                         console.log(response);
+
                     } catch (error) {
                         console.log(error);   
                     }

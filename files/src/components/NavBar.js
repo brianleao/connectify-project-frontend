@@ -10,14 +10,6 @@ import { useState } from "react"
 
 function NavBar() {
 
-    function clicou(e) {
-        e.preventDefault()
-        alert(`Você buscou por ${buscaUsuario}`)
-        
-    }
-
-    const [buscaUsuario, setBuscaUsuario] = useState()
-
     return (
         <nav className={styles.nav_container}>
              
@@ -32,12 +24,10 @@ function NavBar() {
                     <IoHomeOutline className={styles.icons}/>
                 </Link>
                 
-                {/* <IoSearchOutline className={styles.icons}/> */}
-                <div className={styles.searchBar} onSubmit={clicou}>
-                    <input type='text' className={styles.inputSearch} onChange={(e) => setBuscaUsuario(e.target.value)}/>
-                    <IoSearchOutline className={styles.iconSearch} onClick={clicou}/>
-                </div>
-                
+                <Link to="/search">
+                    <IoSearchOutline className={styles.icons}/> 
+                </Link>
+
                 <Link to="/settings">
                     <IoSettingsOutline className={styles.icons}/>
                 </Link>
