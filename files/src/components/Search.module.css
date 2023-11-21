@@ -11,12 +11,26 @@
     width: auto;
     height: max-content;
     font-size: 30px;
-    border: 1px solid red;
     padding: 10px 30px;
-    border-radius: 30px;
+    border-radius: 40px;
+    background: black;
 }
 
 .inputBar {
     padding: 10px;
     font-size:30px;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+}
+
+.icon {
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.icon:hover{
+    color: #0192BE;
 }
