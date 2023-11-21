@@ -1,0 +1,22 @@
+.container_main {
+    height: 100vh;
+    display: flex;
+}
+
+.containerSearch {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 100px auto;
+    width: auto;
+    height: max-content;
+    font-size: 30px;
+    border: 1px solid red;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.inputBar {
+    padding: 10px;
+    font-size:30px;
+}
