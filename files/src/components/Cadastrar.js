@@ -28,7 +28,8 @@ function Cadastrar(props) {
         }
 
         else {
-            alert(`O nome completo é ${name}, o email é ${email} a senha é ${password} e a confirmação da senha é ${confirmPassword}`)
+            alert("Usuário cadastrado com sucesso!");
+            window.location.href="/login"
         }
     }
     //name é o que eu vou ler e setName o que eu vou alterar no name

@@ -89,12 +89,14 @@
 }
 
 .botao {
+    display: block;
     width: max-content;
+    text-align: center;
     margin: 0 auto;
     border: none;
     background: #0192BE;
     color: white;
-    padding: 10px 50px;
+    padding: 10px 40px;
     border-radius: 30px;
     font-size: clamp(15px, 2vw, 70px);
     text-decoration: none;

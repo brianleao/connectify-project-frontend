@@ -22,8 +22,24 @@ function Login() {
         }
     }
 
-    function enterApp(e) {
-        // alert(`O e-mail ou usuário é ${userEMail} e a senha é ${passwordUser}`) 
+    async function enterApp(event) {
+            event.preventDefault();
+            const params = {
+                email: userEMail,
+                senha: passwordUser,
+            };
+            console.log(params);
+            try {
+                const response = await request.login(params);
+                // COLOCAR VALIDACAO DE DADOS RETORNADOS
+                if(response.data[0].email === userEMail) {
+                    window.location.href="/mainpage"
+                }
+
+            } catch (error) {
+                console.log(error);
+                alert("ERRO: Dados incorretos ou usuário não está cadastrado.");
+            }
     }
 
 
@@ -57,24 +73,9 @@ function Login() {
                  </div>
 
                 <a href="#" className={styles.esqsen}>Esqueceu a senha?</a>
-                {<input type="submit" className={styles.botao} value="Entrar" onClick={ async () => {
-                    const params = {
-                        email: userEMail,
-                        senha: passwordUser,
-                    };
-                    console.log(params);
-                    try {
-                        const response = await request.login(params);
-                        // COLOCAR VALIDACAO DE DADOS RETORNADOS
-                        console.log(response);
 
-                    } catch (error) {
-                        console.log(error);   
-                    }
-
-                }}/>}
+                <input type="submit" className={styles.botao} value="Entrar"/>
                 
-
                 <span className={styles.not_sign}>Não possui conta? <br/> <a href="./cadastrar">Clique aqui</a> e cadastre-se agora mesmo!</span>
             </form>
         </div>

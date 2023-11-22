@@ -13,10 +13,10 @@ function NavBar() {
     return (
         <nav className={styles.nav_container}>
              
-            <div className={styles.div_user}>
+            {/* <div className={styles.div_user}>
                 <img src={imgUsuario}/>
                 <p>@usuario</p>
-            </div>
+            </div> */}
             
 
             <div className={styles.div_icons}>
