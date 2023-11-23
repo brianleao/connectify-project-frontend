@@ -11,8 +11,10 @@ function BottomBar() {
                 <IoHomeOutline className={styles.icons}/>
             </Link>
 
-            <IoSearchOutline className={styles.icons}/>
-            
+            <Link to="/search">
+                <IoSearchOutline className={styles.icons}/>
+            </Link>
+
             <Link to="/settings">
                 <IoSettingsOutline className={styles.icons}/>
             </Link>

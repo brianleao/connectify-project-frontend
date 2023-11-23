@@ -1,6 +1,6 @@
 .container_main {
+    width: 100vw;
     height: 100vh;
-    display: flex;
 }
 
 .containerSearch {
@@ -9,28 +9,42 @@
     align-items: center;
     margin: 100px auto;
     width: auto;
-    height: max-content;
-    font-size: 30px;
+    max-width: 60%;
     padding: 10px 30px;
     border-radius: 40px;
-    background: black;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 15px #858585;
 }
 
 .inputBar {
-    padding: 10px;
-    font-size:30px;
+    width: 100%;
+    padding: 5px;
+    font-size:20px;
     border: none;
     outline: none;
     background: none;
-    color: white;
+    color: black;
 }
 
 .icon {
     font-size: 50px;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
 .icon:hover{
     color: #0192BE;
+}
+
+@media(max-width: 767px) {
+    .containerSearch {
+        width: 90%;
+        margin-bottom: 476px;
+        max-width: none;
+    }
+
+    .inputBar {
+        font-size: 20px;
+    }
+
 }

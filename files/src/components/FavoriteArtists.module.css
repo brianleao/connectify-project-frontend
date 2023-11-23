@@ -32,6 +32,6 @@
 
     .container_main {
         margin-left: 30px;
-        height: calc(100vh - 230px);
+        height: calc(100vh - 160px);
     }
 }
