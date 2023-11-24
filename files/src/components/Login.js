@@ -6,7 +6,7 @@ import {IoEyeOutline} from 'react-icons/io5'
 import styles from './Login.module.css'
 import Logo from './Logo'
 import {Link} from 'react-router-dom'
-import request from "../services/services";
+import request from "../services/services.js";
 import axios from "axios";
 
 function Login() {

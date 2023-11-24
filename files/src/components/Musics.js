@@ -5,9 +5,11 @@ import {IoStarHalf} from "react-icons/io5"
 import Player from './Player'
 import {IoReorderThree} from 'react-icons/io5'
 import BottomBar from './BottomBar'
+import request from '../services/services'
+import Search from './Search'
 
 
-function Musics() {
+export default function Musics() {
 
     function adicionarMusicaPlayList() {
         alert('A música foi adicionada na playlist!')
@@ -41,8 +43,7 @@ function Musics() {
                 </div>
             </div>
             <BottomBar/>
+            <Search/>
         </div>
     )
 }
-
-export default Musics

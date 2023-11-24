@@ -1,6 +1,5 @@
-.container_main {
-    width: 100vw;
-    height: 100vh;
+.containerMusics{
+    display: none;
 }
 
 .containerSearch {
@@ -47,4 +46,8 @@
         font-size: 20px;
     }
 
+    .container_main {
+        width: 100vw;
+        height: 100vh;
+    }
 }
