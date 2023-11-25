@@ -38,7 +38,7 @@
 @media(max-width: 767px) {
     .containerSearch {
         width: 90%;
-        margin-bottom: 476px;
+        margin-bottom: 460px;
         max-width: none;
     }
 
@@ -48,6 +48,5 @@
 
     .container_main {
         width: 100vw;
-        height: 100vh;
     }
 }

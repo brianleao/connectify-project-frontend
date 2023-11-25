@@ -15,9 +15,7 @@ function Ranking() {
                     <h1 className={styles.tittle_main}>Seu Ranking</h1>
                     <h1>1. Otherside</h1>
                     <div className={styles.musicRanking}>
-                        <Link to="/musics">
                         <div className={styles.capa}></div>
-                        </Link>
                         <IoRemoveCircleOutline className={styles.iconRemove}/>
                     </div>
                 
