@@ -6,11 +6,9 @@ import { PlayerContext } from '../contexts/PlayerContext'
 
 function Player () {
       const { dadosMusica } = useContext(PlayerContext)
-
+      //console.log(dadosMusica)
      return (
-        <AudioPlayer src={`/${dadosMusica.path_musica}`} onPlay={e =>  {
-         //console.log("onPlay");
-      }}/>
+        <AudioPlayer src={`/${dadosMusica.path_musica}`}/>
      )
 }
 

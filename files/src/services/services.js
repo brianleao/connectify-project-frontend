@@ -47,9 +47,12 @@ const request =   {
 
         }
         if(idMusica) {
+            console.log(typeof(idMusica));
             query += `id_musica=${idMusica}`;
-
         }
+
+        
+
         return instance.get(query);
     },
     /**
