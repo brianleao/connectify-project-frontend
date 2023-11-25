@@ -7,9 +7,13 @@ import {IoReorderThree} from 'react-icons/io5'
 import BottomBar from './BottomBar'
 import request from '../services/services'
 import Search from './Search'
+import { useContext } from 'react'
+import { PlayerContext } from '../contexts/PlayerContext'
 
 export default function Musics() {
+    const { dadosMusica } = useContext(PlayerContext)
 
+    
     function adicionarMusicaPlayList() {
         alert('A música foi adicionada na playlist!')
     }
@@ -32,7 +36,7 @@ export default function Musics() {
                         <img src={MusicMain} className={styles.img_music}/>
                     
                     <div className={styles.music_infos}>
-                        <h2 className={styles.music_name}>Otherside</h2>
+                        <h2 className={styles.music_name}>{dadosMusica.nome_musica}</h2>
                         <p className={styles.singer_name}>Red Hot Chili Peppers</p>
                     </div>
                 </div>

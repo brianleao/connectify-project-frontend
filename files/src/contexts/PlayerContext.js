@@ -9,9 +9,12 @@ export function PlayerProvider({children}) {
     })
 
     return (
-        <PlayerContext.Provider value={{
-            dadosMusica, setDadosMusica
-        }}>
+        <PlayerContext.Provider
+            value={{
+                dadosMusica,
+                setDadosMusica
+            }}
+        >
             {children}
         </PlayerContext.Provider>
     )
