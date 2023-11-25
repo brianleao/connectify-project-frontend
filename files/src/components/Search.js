@@ -17,8 +17,15 @@ function Search() {
 
     async function CallMusic() {
         try {
-            const response = await request.getMusica(searchMusic);
-            setDadosMusica(response.data[searchMusic-1])
+            const response = await request.getMusica({nomeMusica: searchMusic});
+
+            for(let i=0; i < response.data.length; i++) {
+                if(response.data[i].nome_musica === searchMusic) {
+                    setDadosMusica(response.data[i])
+                }
+            }
+
+            //setDadosMusica(response.data[0])
         } catch (error) {
             alert("Erro, não foi possível encontrar a busca realizada.");
         }

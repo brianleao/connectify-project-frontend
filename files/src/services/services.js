@@ -37,7 +37,7 @@ const request =   {
      * @returns musicas, o json de parametros serve como filtro para a consulta
      */
     getMusica: function (params) {
-        const {idAlbum, idArtista, idMusica} = params;
+        const {idAlbum, idArtista, idMusica, nomeMusica} = params;
         let query = '/api/musicas?';
         if (idAlbum) {
             query += `id_album=${idAlbum}`;
@@ -47,11 +47,12 @@ const request =   {
 
         }
         if(idMusica) {
-            console.log(typeof(idMusica));
             query += `id_musica=${idMusica}`;
         }
 
-        
+        if(nomeMusica) {
+            query += `nome_musica=${nomeMusica}`;
+        }
 
         return instance.get(query);
     },
@@ -91,7 +92,6 @@ const request =   {
      */
     getUsuarios: function () {
         return instance.get('/api/usuarios');
-
     },
     /**
      * 
