@@ -11,25 +11,27 @@ import Musics from './components/Musics';
 import Playlist from './components/Playlist'
 import Settings from './components/Settings';
 import Search from './components/Search';
+import { PlayerProvider } from './contexts/PlayerContext';
 
 function App() {
   return (
-    <Router>
-            <Routes>
-                <Route exact path="/" element={<Home/>}/>
-                <Route path="/login" element={<Login/>}/>
-                <Route path="/cadastrar" element={<Cadastrar/>}/>
-                <Route path="/mainpage" element={<MainPage/>}/>
-                <Route path="/ranking" element={<Ranking/>}/>
-                <Route path="/playlists" element={<Playlists/>}/>
-                <Route path="/favoriteartists" element={<FavoriteArtists/>}/>
-                <Route path="/musics" element={<Musics/>}/>
-                <Route path="/playlist" element={<Playlist/>}/>
-                <Route path="/settings" element={<Settings/>}/>
-                <Route path="/search" element={<Search/>}/>
-            </Routes>
-    </Router>
-    
+    <PlayerProvider>
+        <Router>
+                <Routes>
+                    <Route exact path="/" element={<Home/>}/>
+                    <Route path="/login" element={<Login/>}/>
+                    <Route path="/cadastrar" element={<Cadastrar/>}/>
+                    <Route path="/mainpage" element={<MainPage/>}/>
+                    <Route path="/ranking" element={<Ranking/>}/>
+                    <Route path="/playlists" element={<Playlists/>}/>
+                    <Route path="/favoriteartists" element={<FavoriteArtists/>}/>
+                    <Route path="/musics" element={<Musics/>}/>
+                    <Route path="/playlist" element={<Playlist/>}/>
+                    <Route path="/settings" element={<Settings/>}/>
+                    <Route path="/search" element={<Search/>}/>
+                </Routes>
+        </Router>
+    </PlayerProvider>    
   );
 }
 

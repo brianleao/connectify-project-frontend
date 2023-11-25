@@ -73,6 +73,11 @@ span {
     font-weight: 400;
 }
 
+.containerSearch {
+    display: none;
+}
+
+
 @media (max-width: 767px) {
 
     .container_main {

@@ -5,7 +5,8 @@ import { useState } from 'react'
 import axios from 'axios'
 import request from "../services/services.js";
 import React, {Component} from "react";
-import Musics from './Musics.js'
+import Musics from './Musics.js';
+
 
 function Search() {
 
@@ -15,7 +16,8 @@ function Search() {
     async function CallMusic() {
         try {
             const response = await request.getMusica(searchMusic);
-            console.log(response.data[searchMusic-1]);
+            setMusicData(response.data[searchMusic-1])
+            console.log(musicData)
 
         } catch (error) {
             alert("Erro, não foi possível encontrar a busca realizada.");

@@ -8,7 +8,6 @@ import BottomBar from './BottomBar'
 import request from '../services/services'
 import Search from './Search'
 
-
 export default function Musics() {
 
     function adicionarMusicaPlayList() {
@@ -43,7 +42,6 @@ export default function Musics() {
                 </div>
             </div>
             <BottomBar/>
-            <Search/>
         </div>
     )
 }

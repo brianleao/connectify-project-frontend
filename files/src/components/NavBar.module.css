@@ -18,12 +18,10 @@
     font-size: 40px;
     cursor: pointer;
     color: black;
-    transition: 0.3s;
 }
 
 .icons:hover {
     color: #0192BE;
-    font-size: 50px;
 }
 
 .div_icons {
