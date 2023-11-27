@@ -12,6 +12,7 @@ import Playlist from './components/Playlist'
 import Settings from './components/Settings';
 import Search from './components/Search';
 import { PlayerProvider } from './contexts/PlayerContext';
+import NewPlaylist from './components/NewPlaylist';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
                     <Route path="/playlist" element={<Playlist/>}/>
                     <Route path="/settings" element={<Settings/>}/>
                     <Route path="/search" element={<Search/>}/>
+                    <Route path="/newplaylist" element={<NewPlaylist/>}/>
                 </Routes>
         </Router>
     </PlayerProvider>    

@@ -16,10 +16,10 @@ function Playlists() {
                 <div className={styles.container_m}>
                     <div className={styles.containerAddPlaylist}>
                         <h1 className={styles.tittlePlaylist}>Playlists</h1>
-                        <div className={styles.newPlaylist}>
+                        <Link to="/newplaylist" className={styles.newPlaylist}>
                             <button className={styles.buttonNewPlaylist}>Criar Playlist</button>
                             <IoAddCircle className={styles.iconAdd}/>
-                        </div>
+                        </Link>
                     </div>
                         <h1>Playlist 1</h1>
                         <div className={styles.infosPlaylist}>
