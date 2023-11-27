@@ -113,7 +113,7 @@ const request =   {
     /**
      * 
      * @param {JSON} params
-     * cadastra o novo usuario dentro do sistema
+     * cadastra nova playlist dentro do sistema
      * O JSON passado como parametro deve ter o seguinte formato
      * {
      *  nome: string,
