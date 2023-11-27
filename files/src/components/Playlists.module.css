@@ -2,6 +2,34 @@
     display: flex;
 }
 
+.containerAddPlaylist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconAdd {
+    font-size: 40px;
+    color: green;
+}
+
+.newPlaylist {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    background: rgb(0, 0, 0);
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+.buttonNewPlaylist {
+    border: none;
+    background: none;
+    color: white;
+    font-size: clamp(15px, 1.5vw, 30px);
+    font-weight: bold;
+}
+
 .container_m {
     display: flex;
     flex-direction: column;

@@ -5,6 +5,7 @@ import imgPlaylist from './music_images/img_playlist.png'
 import {IoReorderThree} from 'react-icons/io5'
 import {Link} from 'react-router-dom'
 import BottomBar from './BottomBar'
+import { IoAddCircle } from "react-icons/io5";
 
 function Playlists() {
     return (
@@ -13,7 +14,13 @@ function Playlists() {
             <div className={styles.container_main}>
                 <SideBar/>
                 <div className={styles.container_m}>
-                    <h1 className={styles.tittlePlaylist}>Playlists</h1>
+                    <div className={styles.containerAddPlaylist}>
+                        <h1 className={styles.tittlePlaylist}>Playlists</h1>
+                        <div className={styles.newPlaylist}>
+                            <button className={styles.buttonNewPlaylist}>Criar Playlist</button>
+                            <IoAddCircle className={styles.iconAdd}/>
+                        </div>
+                    </div>
                         <h1>Playlist 1</h1>
                         <div className={styles.infosPlaylist}>
                             <Link to='/playlist'>

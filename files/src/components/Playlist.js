@@ -2,6 +2,7 @@ import NavBar from './NavBar'
 import styles from './Playlist.module.css'
 import {Link} from 'react-router-dom'
 import BottomBar from './BottomBar'
+import { IoAddCircle } from "react-icons/io5";
 
 function Playlist() {
     return (
