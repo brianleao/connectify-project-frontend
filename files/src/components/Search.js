@@ -17,7 +17,9 @@ function Search() {
 
     async function CallMusic() {
         try {
-            const response = await request.getMusica({nomeMusica: searchMusic});
+            const response = await request.getMusica({
+                nomeMusica: searchMusic
+            });
 
             for(let i=0; i < response.data.length; i++) {
                 if(response.data[i].nome_musica === searchMusic) {
