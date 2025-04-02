@@ -15,4 +15,4 @@ Desenvolvi o **frontend** do **Connectify** como parte de um projeto acadêmico 
 
 ---
 
-Feito com ❤️ por Brian.
+Feito com ❤️ por Brian Leão.
