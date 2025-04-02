@@ -3,7 +3,7 @@
 O **Connectify** é um aplicativo de música e interação social que permite aos usuários tocar músicas salvas localmente.
 
 ## 🚀 Funcionalidades
-* Reproduz músicas salvas localmente.
+* Reproduz músicas salvas localmente ao buscar pelo nome dela.
 
 ## 🛠 Tecnologias Utilizadas
 
