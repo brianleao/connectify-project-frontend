@@ -11,7 +11,7 @@ Desenvolvi o **frontend** do **Connectify** como parte de um projeto acadêmico 
 
 * **React** - Biblioteca principal para construção da interface.
 * **Node.js** - Ambiente de execução para desenvolvimento.
-* Axios - Para requisições.
+* **Axios** - Para requisições.
 
 ---
 
